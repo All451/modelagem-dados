@@ -1,0 +1,19 @@
+// Modelo Conceitual de E-commerce
+// Este arquivo seria criado com uma ferramenta de modelagem como BRModelo
+
+// Entidades Principais:
+// CLIENTE (id_cliente, nome, email, telefone, endereco)
+// PRODUTO (id_produto, nome, descricao, preco, estoque)
+// PEDIDO (id_pedido, data_pedido, status, valor_total)
+// CATEGORIA (id_categoria, nome, descricao)
+// FORNECEDOR (id_fornecedor, nome, cnpj, contato)
+
+// Relacionamentos:
+// CLIENTE - PEDIDO (1:N) - Realiza
+// PEDIDO - PRODUTO (N:M) - Contém (com atributo quantidade)
+// PRODUTO - CATEGORIA (N:1) - Pertence
+// PRODUTO - FORNECEDOR (N:1) - Fornece
+
+// Especializações:
+// CLIENTE → PESSOA_FISICA | PESSOA_JURIDICA
+// PRODUTO → FISICO | DIGITAL

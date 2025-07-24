@@ -1,0 +1,21 @@
+// Modelo Conceitual de Sistema Acadêmico
+// Este arquivo seria criado com uma ferramenta de modelagem como BRModelo
+
+// Entidades Principais:
+// ALUNO (matricula, nome, cpf, data_nascimento, email)
+// PROFESSOR (id_professor, nome, cpf, departamento, titulacao)
+// DISCIPLINA (codigo, nome, creditos, ementa)
+// CURSO (id_curso, nome, duracao, coordenador)
+// TURMA (id_turma, semestre, ano, horario)
+// MATRICULA (data_matricula, status)
+
+// Relacionamentos:
+// ALUNO - CURSO (N:1) - Pertence
+// ALUNO - TURMA (N:M) - Matriculado (com atributo MATRICULA)
+// PROFESSOR - TURMA (1:N) - Ministra
+// TURMA - DISCIPLINA (N:1) - Oferece
+// CURSO - DISCIPLINA (N:M) - Possui
+
+// Especializações:
+// PESSOA → ALUNO | PROFESSOR | FUNCIONARIO
+// PROFESSOR → EFETIVO | VISITANTE
